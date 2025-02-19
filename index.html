@@ -132,32 +132,49 @@
                 <div class="carousel-item active">
                     <img src="./images/image1.jpg" class="d-block w-100" alt="Professional Work">
                     <div class="carousel-caption d-none d-md-block">
-                        <h2>CODESPULSE</h2>
+                        <h2 class="highlight-heading">CODESPULSE</h2>
                         <p>Creating innovative solutions with the best team.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="./images/image2.jpg" class="d-block w-100" alt="Team Coding Session">
                     <div class="carousel-caption d-none d-md-block">
-                        <h2>Team Coding</h2>
+                        <h2 class="highlight-heading">Team Coding</h2>
                         <p>Bringing ideas to life through programming.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="./images/image3.jpg" class="d-block w-100" alt="Software Development">
                     <div class="carousel-caption d-none d-md-block">
-                        <h2>Software Development</h2>
+                        <h2 class="highlight-heading">Software Development</h2>
                         <p>Turning vision into reality through code.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="./images/image4.jpg" class="d-block w-100" alt="Innovative Solutions">
                     <div class="carousel-caption d-none d-md-block">
-                        <h2>Innovation</h2>
+                        <h2 class="highlight-heading">Innovation</h2>
                         <p>Transforming ideas into powerful solutions.</p>
                     </div>
                 </div>
             </div>
+            
+            <style>
+                /* Professional Highlight for <h2> */
+                .highlight-heading {
+                    display: inline-block;
+                    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+                    color: #fff;
+                    padding: 10px 20px;
+                    border-radius: 8px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+                    backdrop-filter: blur(3px);
+                }
+            </style>
+            
     
             <!-- Carousel Controls -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -177,8 +194,50 @@
         <br><br>
         <h1>CODESPULSE - Advanced Web Development Team</h1>
         <p>Empowering innovation through cutting-edge web technologies, real-time collaboration, and hands-on projects.</p>
-        <button class="btn btn-primary">Explore Our Work</button>
+        <button class="btn btn-primary" onclick="showTopics()">Explore Our Work</button>
     </section>
+    
+    <!-- IoT Topics Section (Initially Hidden) -->
+    <div class="container mt-4 text-center" id="iotTopics" style="display: none;">
+        <h2 class="mb-4">Internet of Things (IoT) Topics</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="row text-center">
+                    <div class="col-md-3 col-sm-6 mb-3"><strong>1)</strong> Introduction to IoT: Concepts and Architecture</div>
+                    <div class="col-md-3 col-sm-6 mb-3"><strong>2)</strong> IoT Protocols: MQTT, CoAP, and Communication Standards</div>
+                    <div class="col-md-3 col-sm-6 mb-3"><strong>3)</strong> IoT Components: Sensors, Actuators, and Edge Computing</div>
+                    <div class="col-md-3 col-sm-6 mb-3"><strong>4)</strong> IoT Applications: Smart Homes, Cities, and Industries</div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-3 col-sm-6 mb-3"><strong>5)</strong> IoT Security: Challenges and Privacy Considerations</div>
+                    <div class="col-md-3 col-sm-6 mb-3"><strong>6)</strong> IoT Platforms: AWS IoT, Google Cloud IoT, Azure IoT</div>
+                    <div class="col-md-3 col-sm-6 mb-3"><strong>7)</strong> AI & IoT: Integration with AI and Big Data</div>
+                    <div class="col-md-3 col-sm-6 mb-3"><strong>8)</strong> Future Trends: 5G-enabled IoT and Digital Twins</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function showTopics() {
+            document.getElementById('iotTopics').style.display = 'block';
+        }
+    </script>
+    
+    <style>
+        .container {
+            max-width: 900px;
+        }
+        .row div {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            border: 1px solid #ddd;
+        }
+    </style>
+    
     
     <section class="stats text-center">
         <div class="container">
