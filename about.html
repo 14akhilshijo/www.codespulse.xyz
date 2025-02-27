@@ -3,59 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | CodesPulse</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>CODESPULSE - Arctic Wolf Timeline</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: white;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 50px 0;
+        }
+        .journey-box {
+            background: #0b0b0b;
+            padding: 20px;
+            border-left: 5px solid #007bff;
+            max-width: 400px;
+        }
+        .timeline {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 2px solid white;
+            padding: 30px 0;
+            position: relative;
+        }
+        .timeline .event {
+            text-align: center;
+            position: relative;
+        }
+        .timeline .event::before {
+            content: '';
+            width: 12px;
+            height: 12px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .event h3 {
+            font-size: 16px;
+            margin: 10px 0 5px;
+        }
+        .event p {
+            font-size: 14px;
+        }
+        .cta-section {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .cta-section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .cta-section p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .about-section {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background: #1a1a1a;
+        }
+        .about-section h2 {
+            font-size: 24px;
+        }
+        .about-section p {
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
-    <header class="bg-dark text-white py-3 text-center">
-        <h1>About CodesPulse</h1>
-    </header>
-    
-    <section class="container mt-4">
-        <h2 class="text-center mb-4">Our Journey</h2>
-        <p class="text-center">Since our founding, we have grown into a leading company in our field, expanding our team and customer base while achieving multiple industry recognitions.</p>
-    </section>
-    
-    <section class="container mt-4">
-        <h2 class="text-center mb-4">Timeline</h2>
+    <div class="container">
+        <div class="journey-box">
+            <h2>Our Journey</h2>
+            <p>Since our founding in 2012, Arctic Wolf has risen to the rank of market leader in security operations, adding thousands of employees and customers, as well as a trophy case of awards along the way.</p>
+        </div>
+        
         <div class="timeline">
             <div class="event">
-                <span class="date">2023</span>
-                <p>We launched a groundbreaking service that revolutionized our industry.</p>
+                <h3>Aug 2021</h3>
+                <p>IDC Names Arctic Wolf a Leader in 2021 MDR MarketScape</p>
             </div>
             <div class="event">
-                <span class="date">2022</span>
-                <p>Expanded our presence internationally to serve more customers globally.</p>
+                <h3>Feb 2022</h3>
+                <p>Arctic Wolf Incident Response Launches</p>
             </div>
             <div class="event">
-                <span class="date">2021</span>
-                <p>Recognized as a leader in our domain with multiple awards.</p>
+                <h3>Oct 2022</h3>
+                <p>Arctic Wolf Expands Presence to Australia and New Zealand</p>
+            </div>
+            <div class="event">
+                <h3>May 2023</h3>
+                <p>Arctic Wolf Named to CNBC Disruptor 50 List for Second Consecutive Year</p>
             </div>
         </div>
-    </section>
-    
-    <section class="container mt-4">
-        <h2 class="text-center mb-4">Our Mission</h2>
-        <p class="text-center">CodesPulse is a dynamic group of tech enthusiasts dedicated to innovation, collaboration, and excellence. We believe in leveraging technology to create meaningful solutions that make an impact.</p>
-    </section>
-    
-    <section class="container mt-4">
-        <h2 class="text-center mb-4">Meet Our Team</h2>
-        <ul class="list-group text-center">
-            <li class="list-group-item"><strong>Linsha N</strong> - Team Leader</li>
-            <li class="list-group-item"><strong>Akhil Shijo</strong> - Technical Expert</li>
-            <li class="list-group-item"><strong>Shijin</strong> - Software Developer</li>
-            <li class="list-group-item"><strong>Midhun</strong> - Project Coordinator</li>
-            <li class="list-group-item"><strong>Aparna K Santhosh</strong> - UI/UX Designer</li>
-            <li class="list-group-item"><strong>Nobin Rajeev</strong> - Cybersecurity Specialist</li>
-            <li class="list-group-item"><strong>Devipriya</strong> - Cloud Engineer</li>
-            <li class="list-group-item"><strong>Abin Abraham</strong> - Quality Assurance</li>
-        </ul>
-    </section>
-    
-    <footer class="bg-dark text-white text-center py-3 mt-4">
-        <p>&copy; 2025 CodesPulse. All Rights Reserved.</p>
-    </footer>
+        
+        <div class="cta-section">
+            <h2>SIMPLIFY YOUR SECURITY OPERATIONS</h2>
+            <p>One platform, delivered by experts, 90% less IT effort, and 24x7 Security Operations.</p>
+        </div>
+        
+        <div class="about-section">
+            <h2>About CODESPULSE</h2>
+            <p>CODESPULSE is a project developed under the Advanced Web Technology topic in our class. Our team consists of 8 members, and our guide is AMAL K JOSE.</p>
+            <p>We aim to explore cutting-edge web technologies and implement innovative solutions to enhance the web development experience.</p>
+        </div>
+    </div>
 </body>
 </html>
