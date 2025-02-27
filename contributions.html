@@ -39,18 +39,17 @@
             z-index: 1;
         }
 
-        /* Wave Animation */
+        /* Water Wave Animation */
         header h1 {
             display: inline-block;
             position: relative;
             font-size: 2.5rem;
-            animation: wave 2.5s infinite ease-in-out;
+            animation: wave-text 2s infinite linear;
         }
 
-        @keyframes wave {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-            100% { transform: translateY(0px); }
+        @keyframes wave-text {
+            0%, 100% { text-shadow: 0 0 10px #00f, 0 0 20px #0ff; }
+            50% { text-shadow: 0 0 20px #00f, 0 0 30px #0ff; }
         }
 
         /* Card Styling */
@@ -81,6 +80,17 @@
                 opacity: 1;
                 transform: translateY(0);
             }
+        }
+
+        /* Color Change Animation for Each Topic */
+        .card h5 {
+            animation: colorChange 3s infinite alternate;
+        }
+
+        @keyframes colorChange {
+            0% { color: #007bff; }
+            50% { color: #28a745; }
+            100% { color: #ff5733; }
         }
 
         /* Footer Styling */
@@ -139,20 +149,6 @@
                 <div class="card p-4 mb-4 animated-card">
                     <h5>6) IoT Platforms</h5>
                     <p>Comparing AWS IoT, Google Cloud IoT, and Azure IoT services.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card p-4 mb-4 animated-card">
-                    <h5>7) AI & IoT</h5>
-                    <p>Leveraging artificial intelligence for smart IoT solutions.</p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card p-4 mb-4 animated-card">
-                    <h5>8) Future Trends</h5>
-                    <p>Exploring 5G, digital twins, and next-gen IoT technologies.</p>
                 </div>
             </div>
         </div>
