@@ -12,6 +12,24 @@
             margin: 0;
             padding: 0;
         }
+        .header {
+            position: relative;
+            background: url('./images/image6.jpg') no-repeat center center;
+            background-size: cover;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: white;
+            position: relative;
+            text-transform: uppercase;
+            filter: url(#wave);
+        }
         .container {
             padding: 50px 20px;
         }
@@ -35,23 +53,24 @@
             text-align: center;
             font-weight: bold;
         }
-        .achievements-heading {
-            text-align: center;
-            font-size: 3rem;
-            font-weight: bold;
-            color: white;
-            padding: 20px;
-            background: url('https://source.unsplash.com/1600x400/?ocean,waves') no-repeat center center;
-            background-size: cover;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            display: inline-block;
-        }
     </style>
 </head>
 <body>
+
+    <div class="header">
+        <h1>Our Achievements</h1>
+    </div>
+
     <div class="container text-center">
-        <h1 class="achievements-heading">Our Achievements</h1>
+        <svg width="0" height="0">
+            <defs>
+                <filter id="wave">
+                    <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise"/>
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="10"/>
+                </filter>
+            </defs>
+        </svg>
+
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
             <div class="col">
                 <div class="certificate">
@@ -62,8 +81,7 @@
             <div class="col">
                 <div class="certificate">
                     <img src="./images/cert2.jpg" alt="Certificate 2">
-                    <div class="caption">APARNA K SANTHOSH
-                    </div>
+                    <div class="caption">APARNA K SANTHOSH</div>
                 </div>
             </div>
             <div class="col">
@@ -75,21 +93,19 @@
             <div class="col">
                 <div class="certificate">
                     <img src="./images/cert4.jpg" alt="Certificate 4">
-                    <div class="caption">SHIJIN THOMAS
-                    </div>
+                    <div class="caption">SHIJIN THOMAS</div>
                 </div>
             </div>
             <div class="col">
                 <div class="certificate">
                     <img src="./images/cert5.jpg" alt="Certificate 5">
-                    <div class="caption">NOBIN RAJEEV
-                    </div>
+                    <div class="caption">NOBIN RAJEEV</div>
                 </div>
             </div>
             <div class="col">
                 <div class="certificate">
                     <img src="./images/cert6.jpg" alt="Certificate 6">
-                    <div class="caption">LINSHA N</div>
+                    <div class="caption">LINSHA N</div>
                 </div>
             </div>
             <div class="col">
@@ -101,11 +117,11 @@
             <div class="col">
                 <div class="certificate">
                     <img src="./certificates/cert8.jpg" alt="Certificate 8">
-                    <div class="caption">MIDHUN SURESH
-                    </div>
+                    <div class="caption">MIDHUN SURESH</div>
                 </div>
             </div>
         </div>
     </div>
+
 </body>
 </html>
