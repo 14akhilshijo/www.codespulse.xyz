@@ -16,12 +16,19 @@
             width: 80%;
             margin: auto;
             padding: 50px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
         }
-        .journey-box {
+        .journey-box, .guide-box {
             background: #0b0b0b;
             padding: 20px;
             border-left: 5px solid #007bff;
             max-width: 400px;
+        }
+        .guide-box {
+            border-left: 5px solid #ffcc00;
+            text-align: right;
         }
         .timeline {
             display: flex;
@@ -77,44 +84,59 @@
         .about-section p {
             font-size: 16px;
         }
+        .guide-name {
+            font-size: 22px;
+            font-weight: bold;
+            color: #ffcc00;
+            font-style: italic;
+        }
+        .guide-title {
+            font-size: 18px;
+            color: #ccc;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="journey-box">
             <h2>Our Journey</h2>
-            <p>Since our founding in 2012, Arctic Wolf has risen to the rank of market leader in security operations, adding thousands of employees and customers, as well as a trophy case of awards along the way.</p>
+            <p>CODESPULSE has evolved into a dynamic group dedicated to exploring cutting-edge technologies. With a shared passion for Cloud Computing, IoT, RPA, and other advanced domains, we have collaborated on impactful projects, expanded our expertise, and continuously pushed the boundaries of innovation.</p>
         </div>
-        
-        <div class="timeline">
-            <div class="event">
-                <h3>Aug 2021</h3>
-                <p>IDC Names Arctic Wolf a Leader in 2021 MDR MarketScape</p>
-            </div>
-            <div class="event">
-                <h3>Feb 2022</h3>
-                <p>Arctic Wolf Incident Response Launches</p>
-            </div>
-            <div class="event">
-                <h3>Oct 2022</h3>
-                <p>Arctic Wolf Expands Presence to Australia and New Zealand</p>
-            </div>
-            <div class="event">
-                <h3>May 2023</h3>
-                <p>Arctic Wolf Named to CNBC Disruptor 50 List for Second Consecutive Year</p>
-            </div>
+        <div class="guide-box">
+            <h2>Our Guide</h2>
+            <p class="guide-name">Amal K Jose</p>
+            <p class="guide-title">Assistant Professor</p>
         </div>
-        
-        <div class="cta-section">
-            <h2>SIMPLIFY YOUR SECURITY OPERATIONS</h2>
-            <p>One platform, delivered by experts, 90% less IT effort, and 24x7 Security Operations.</p>
+    </div>
+    
+    <div class="timeline">
+        <div class="event">
+            <h3>Feb 2025</h3>
+            <p>Form a team of 8 members and assign specific roles based on strengths.</p>
         </div>
-        
-        <div class="about-section">
-            <h2>About CODESPULSE</h2>
-            <p>CODESPULSE is a project developed under the Advanced Web Technology topic in our class. Our team consists of 8 members, and our guide is AMAL K JOSE.</p>
-            <p>We aim to explore cutting-edge web technologies and implement innovative solutions to enhance the web development experience.</p>
+        <div class="event">
+            <h3>Mar 2025</h3>
+            <p>Select advanced technology topics and conduct in-depth research on them.</p>
         </div>
+        <div class="event">
+            <h3>Apr 2025</h3>
+            <p>Develop functional mini-projects, ensuring proper testing and debugging.</p>
+        </div>
+        <div class="event">
+            <h3>May 2025</h3>
+            <p>Deliver a professional and well-structured presentation showcasing innovation.</p>
+        </div>
+    </div>
+    
+    <div class="cta-section">
+        <h2>SIMPLIFY YOUR TECH INNOVATIONS</h2>
+        <p>One collaborative group, driven by experts, reducing complexity, and exploring cutting-edge technologies.</p>
+    </div>
+    
+    <div class="about-section">
+        <h2>About CODESPULSE</h2>
+        <p>CODESPULSE is a collaborative project under the Advanced Web Technology subject in our class.</p>
+        <p>Our team of 8 members focuses on exploring emerging technologies like Cloud Computing, IoT, and RPA to develop innovative solutions that enhance the web development experience.</p>
     </div>
 </body>
 </html>
