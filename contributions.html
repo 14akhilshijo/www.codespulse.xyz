@@ -20,6 +20,7 @@
             font-size: 1.5rem;
             font-weight: bold;
             position: relative;
+            overflow: hidden;
         }
         
         /* Overlay for better text visibility */
@@ -36,6 +37,20 @@
         header h1, header p {
             position: relative;
             z-index: 1;
+        }
+
+        /* Wave Animation */
+        header h1 {
+            display: inline-block;
+            position: relative;
+            font-size: 2.5rem;
+            animation: wave 2.5s infinite ease-in-out;
+        }
+
+        @keyframes wave {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
         }
 
         /* Card Styling */
