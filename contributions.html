@@ -38,23 +38,6 @@
             z-index: 1;
         }
 
-        /* Heading Letter Animation */
-        header h1 span {
-            display: inline-block;
-            animation: bounce 1.5s infinite alternate;
-        }
-        @keyframes bounce {
-            0% { transform: translateY(0); }
-            100% { transform: translateY(-10px); }
-        }
-        header h1 span:nth-child(1) { animation-delay: 0s; }
-        header h1 span:nth-child(2) { animation-delay: 0.1s; }
-        header h1 span:nth-child(3) { animation-delay: 0.2s; }
-        header h1 span:nth-child(4) { animation-delay: 0.3s; }
-        header h1 span:nth-child(5) { animation-delay: 0.4s; }
-        header h1 span:nth-child(6) { animation-delay: 0.5s; }
-        header h1 span:nth-child(7) { animation-delay: 0.6s; }
-
         /* Card Styling */
         .card {
             border: none;
@@ -69,27 +52,20 @@
             box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
         }
 
-        /* Different Animations for Each Topic */
-        .animated-card:nth-child(1) { animation: fadeInUp 1.2s ease-in-out infinite alternate; }
-        .animated-card:nth-child(2) { animation: rotateCard 1.5s ease-in-out infinite alternate; }
-        .animated-card:nth-child(3) { animation: scaleCard 1.5s ease-in-out infinite alternate; }
-        .animated-card:nth-child(4) { animation: slideLeft 1.5s ease-in-out infinite alternate; }
-        
+        /* Animation Effects */
+        .animated-card {
+            animation: fadeInUp 1.2s ease-in-out;
+        }
+
         @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes rotateCard {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(5deg); }
-        }
-        @keyframes scaleCard {
-            from { transform: scale(1); }
-            to { transform: scale(1.05); }
-        }
-        @keyframes slideLeft {
-            from { transform: translateX(-10px); }
-            to { transform: translateX(10px); }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         /* Footer Styling */
@@ -104,9 +80,7 @@
 </head>
 <body>
     <header>
-        <h1>
-            <span>I</span><span>n</span><span>t</span><span>e</span><span>r</span><span>n</span><span>e</span><span>t</span> <span>o</span><span>f</span> <span>T</span><span>h</span><span>i</span><span>n</span><span>g</span><span>s</span> (<span>I</span><span>o</span><span>T</span>)
-        </h1>
+        <h1>Internet of Things (IoT)</h1>
         <p>Enhancing Connectivity and Intelligence Across Devices</p>
     </header>
     
@@ -122,6 +96,48 @@
                 <div class="card p-4 mb-4 animated-card">
                     <h5>2) IoT Protocols</h5>
                     <p>Exploring MQTT, CoAP, and other communication standards.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card p-4 mb-4 animated-card">
+                    <h5>3) IoT Components</h5>
+                    <p>Key hardware and software elements in IoT ecosystems.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card p-4 mb-4 animated-card">
+                    <h5>4) IoT Applications</h5>
+                    <p>Smart cities, industrial automation, and connected healthcare.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card p-4 mb-4 animated-card">
+                    <h5>5) IoT Security</h5>
+                    <p>Strategies for securing IoT networks and data privacy.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card p-4 mb-4 animated-card">
+                    <h5>6) IoT Platforms</h5>
+                    <p>Comparing AWS IoT, Google Cloud IoT, and Azure IoT services.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card p-4 mb-4 animated-card">
+                    <h5>7) AI & IoT</h5>
+                    <p>Leveraging artificial intelligence for smart IoT solutions.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card p-4 mb-4 animated-card">
+                    <h5>8) Future Trends</h5>
+                    <p>Exploring 5G, digital twins, and next-gen IoT technologies.</p>
                 </div>
             </div>
         </div>
